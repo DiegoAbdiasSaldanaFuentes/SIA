@@ -1,0 +1,35 @@
+{
+  "name": "Flujo Minimarket",
+  "nodes": [
+    {
+      "parameters": {
+        "httpMethod": "POST",
+        "path": "scan",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 2.2,
+      "position": [
+        0,
+        0
+      ],
+      "id": "772ce765-15e7-4294-9c13-5589a31b251d",
+      "name": "Webhook",
+      "webhookId": "bfdc28cf-c782-4075-af8e-05d1c0740054"
+    }
+  ],
+  "pinData": {},
+  "connections": {},
+  "active": false,
+  "settings": {
+    "executionOrder": "v1",
+    "binaryMode": "separate"
+  },
+  "versionId": "9cd78dc0-9206-480b-b594-3ef2d1b9626b",
+  "meta": {
+    "instanceId": "7583bd077fd805902ffc1d626d9614b64ac4ae7ec60a522ae32667a1f6c63b54"
+  },
+  "nodeGroups": [],
+  "id": "SkDacGNwmU8ww4Hd",
+  "tags": []
+}
