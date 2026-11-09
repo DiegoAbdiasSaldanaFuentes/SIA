@@ -1,0 +1,7 @@
+CREATE TABLE IF NOT EXISTS productos (
+    id SERIAL PRIMARY KEY,
+    nombre VARCHAR(150) NOT NULL,
+    codigo_barras VARCHAR(13) UNIQUE NOT NULL,
+    stock_actual INTEGER NOT NULL DEFAULT 0,
+    stock_minimo INTEGER NOT NULL DEFAULT 5
+);
