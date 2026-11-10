@@ -3,7 +3,7 @@ import { Html5Qrcode, Html5QrcodeSupportedFormats } from 'html5-qrcode'
 import './App.css'
 
 // Dirección del webhook de n8n (la define el líder en el backend)
-const WEBHOOK_URL = 'http://localhost:5678/webhook-test/scan'
+const WEBHOOK_URL = 'http://localhost:5678/webhook/scan'
 
 // Id del <div> donde html5-qrcode dibuja el video de la cámara
 const ID_LECTOR = 'lector'
