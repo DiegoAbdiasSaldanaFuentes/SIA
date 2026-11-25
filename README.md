@@ -1,5 +1,3 @@
-
-```
 # Sistema de Automatización de Inventario (SIA) - Minimarket
 
 Sistema de automatización de procesos y consultas de inventario en tiempo real para un minimarket, desarrollado mediante flujos de trabajo en n8n, base de datos relacional en PostgreSQL y mensajería automatizada a través de la API de Bots de Telegram.
@@ -43,44 +41,32 @@ El flujo principal (`Flujo Minimarket`) sigue una arquitectura modular de cuatro
    ```bash
    git clone <URL_DEL_REPOSITORIO>
    cd SIA/backend
-```
+   ```
 
 2. Configurar las variables de entorno en `docker-compose.yml` (o archivo `.env`), asegurándose de definir la URL pública del webhook (`N8N_WEBHOOK_URL`) y las credenciales de PostgreSQL.
-    
+
 3. Levantar los servicios en segundo plano:
-    
-    Bash
-    
-    ```
-    docker compose up -d
-    ```
-    
+   ```bash
+   docker compose up -d
+   ```
+
 4. Acceder al panel de n8n en `http://localhost:5678`, importar o activar el flujo de trabajo y configurar las credenciales de Telegram y PostgreSQL.
-    
 
 ## Buenas Prácticas de Seguridad
 
-- Las consultas a PostgreSQL utilizan estrictamente parámetros vinculados (_Query Parameters_) en lugar de interpolación directa de texto.
-    
-- Los tokens de Telegram y credenciales de base de datos no deben versionarse en texto plano dentro del repositorio.
-    
+* Las consultas a PostgreSQL utilizan estrictamente parámetros vinculados (*Query Parameters*) en lugar de interpolación directa de texto.
+* Los tokens de Telegram y credenciales de base de datos no deben versionarse en texto plano dentro del repositorio.
 
 ## Equipo de Desarrollo
 
-|**Integrante**|**Rol / Responsabilidades**|
-|---|---|
-|**Diego Abdias Saldaña Fuentes**|Configuración de infraestructura en Docker, diseño e implementación de flujos en n8n, integración con Telegram Bot API y consultas parametrizadas en PostgreSQL.|
-|**Victor Adan Farias Rivas**|_[Especificar tareas asignadas]_|
-|**Joaquin Torres**|_[Especificar tareas asignadas]_|
+| Integrante | Rol / Responsabilidades |
+| :--- | :--- |
+| **Diego Abdias Saldaña Fuentes** | Configuración de infraestructura en Docker, diseño e implementación de flujos en n8n, integración con Telegram Bot API y consultas parametrizadas en PostgreSQL. |
+| **Victor Adan Farias Rivas** | *[Especificar tareas asignadas]* |
+| **Joaquin Torres** | *[Especificar tareas asignadas]* |
 
 ## Contacto
 
 Para consultas técnicas o información sobre el repositorio:
 
-- **Diego Abdias Saldaña Fuentes** - saldanafuentesabdiasdiego@gmail.com
-    
-
-```
-
-Las tareas de Victor Adan Farias Rivas y Joaquin Torres quedaron con marcadores de posición porque en este chat no se registraron sus responsabilidades específicas dentro del proyecto SIA. Si me indicas qué hizo cada uno, actualizo la tabla de inmediato.
-```
+* **Diego Abdias Saldaña Fuentes** - saldanafuentesabdiasdiego@gmail.com
